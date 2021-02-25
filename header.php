@@ -12,3 +12,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
+  
+  <!--Main Navigation-->
+  <header>
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main>
