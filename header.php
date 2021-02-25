@@ -12,9 +12,11 @@
     <?php wp_head(); ?>
 </head>
 <body>
-  
+
   <!--Main Navigation-->
   <header>
+
+  <?php require_once('template-parts/header/navbar.php'); ?>
 
   </header>
   <!--Main Navigation-->
