@@ -23,6 +23,9 @@ if ( have_posts() ) {
   echo '</div>';
 
   echo '</section>';
+
+mdb_pagination();
+
 } else {
 
 	// If no content, include the "No posts found" template.

@@ -1,5 +1,21 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Define Constants
+ */
+define( 'MDB_THEME_VERSION', '1' );
+define( 'MDB_THEME_DIR', trailingslashit( get_template_directory() ) );
+define( 'MDB_THEME_URI', trailingslashit( esc_url( get_template_directory_uri() ) ) );
+
+/**
+ * Include external files
+ */
+require_once MDB_THEME_DIR . 'template-parts/pagination/pagination.php' ;
+
 /**
  * Include CSS and JS files
  */
@@ -18,3 +34,10 @@ function setup_featured_img() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'setup_featured_img');
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+  return 'class="page-link"';
+}
