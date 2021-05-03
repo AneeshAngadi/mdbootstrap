@@ -12,7 +12,7 @@ echo '<div class="container">';
 
 if ( have_posts() ) {
 
-  echo '<section>';
+  echo '<section class="mb-4">';
 
   the_archive_title( '<h1 class="h2 font-weight-bold my-4 text-center">', '</h1>' );
 

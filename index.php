@@ -6,7 +6,7 @@ echo '<div class="container">';
 
 if ( have_posts() ) {
 
-  echo '<section>';
+  echo '<section class="mb-4">';
 
   echo '<h1 class="h2 font-weight-bold my-4 text-center">Recent posts</h1>';
 
