@@ -3,7 +3,7 @@
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Brand</a>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Brand</a>
 
     <!-- Toggle button -->
     <button
@@ -59,21 +59,8 @@
       <!-- Left links -->
 
       <!-- Search form -->
-      <form class="d-flex input-group w-auto">
-        <input
-          type="search"
-          class="form-control"
-          placeholder="Type query"
-          aria-label="Search"
-        />
-        <button
-          class="btn btn-outline-primary"
-          type="button"
-          data-mdb-ripple-color="dark"
-        >
-          Search
-        </button>
-      </form>
+      <?php get_search_form(); ?>
+
     </div>
     <!-- Collapsible wrapper -->
   </div>
