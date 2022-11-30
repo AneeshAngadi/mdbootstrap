@@ -74,7 +74,7 @@ if ( have_posts() ) {
 
         <!--Section: Share buttons-->
         <section class="text-center border-top border-bottom py-4 mb-4">
-          <p><strong>Spreed the word:</strong></p>
+          <p><strong>Spread the word:</strong></p>
           <!-- Facebook -->
           <a class="btn btn-primary my-2" style="background-color: #3b5998" href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink());?>" role="button" target="blank" rel="noopener noreferrer"
             ><i class="fab fa-facebook-f"></i
